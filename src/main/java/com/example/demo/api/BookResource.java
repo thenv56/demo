@@ -36,7 +36,7 @@ public class BookResource {
         List<Book> list = bookService.saveAll(books);
         return ResponseEntity.ok().body(list);
     }
-
+// test commit
     @GetMapping("/book/author/{id}")
     public ResponseEntity<?> getAuthorName(@PathVariable(name = "id") Long id) {
         Book book = bookService.getBook(id);
